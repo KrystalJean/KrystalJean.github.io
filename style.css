@@ -1,0 +1,23 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+
+
+nav {
+    background-color: violet;
+    
+}
+
+#navButtons {
+    color: lightskyblue;
+    display: block;
+    width: 90%;
+    text-align: center;
+}
+
+#hero {
+    background-image: url("./images/skyline2.jpg");
+    background-position: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    
+    background-color: aqua;    
+}
