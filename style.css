@@ -1,23 +1,32 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
 
-
-nav {
-    background-color: violet;
-    
+body {
+    background-color: rgb(197, 197, 202);
 }
-
-#navButtons {
-    color: lightskyblue;
-    display: block;
+nav {
+    color :#c2bdee;
+    align-content: center;
     width: 90%;
     text-align: center;
+    
+}
+header {
+    background-image: url("./images/devLuv-PNG.png");
+    background-repeat: no-repeat;
+    background-color: black;
+    
 }
 
 #hero {
-    background-image: url("./images/skyline2.jpg");
-    background-position: cover;
-    background-repeat: no-repeat;
-    height: 100%;
+    background-color: #49eeb4;
     
-    background-color: aqua;    
+}
+
+#portfolio {
+    background-color: turquoise;
+}
+
+#about {
+    background-color: #c2bdee;
+    opacity: 80%;
 }
