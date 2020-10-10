@@ -5,9 +5,9 @@ body {
 }
 nav {
     color :#c2bdee;
-    align-content: center;
+    
     width: 90%;
-    text-align: center;
+    text-align: right;
     
 }
 header {
@@ -24,9 +24,15 @@ header {
 
 #portfolio {
     background-color: turquoise;
+    
+    
 }
 
 #about {
     background-color: #c2bdee;
     opacity: 80%;
+}
+
+ul {
+    list-style-type: square;
 }
