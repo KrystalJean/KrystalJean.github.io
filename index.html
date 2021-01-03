@@ -9,80 +9,124 @@
   
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>Portfolio</li>
-                <li>About Me</li>
-                <li>Contact</li>
-                <li>Network</li>
-            </ul>
-        </nav>
-    </header>
 
-    <!--Beginning of the Hero Banner section-->
+    <!-- Navigation Bar -->
+
+    <nav id="navbar">
+        <h4>Portfolio</h4>
+        <h4>About Me</h4>
+        <h4>Contact</h4>
+        <h4>Network</h4>  
+    </nav>
+
+    <!--Hero Banner-->
+
     <section id="hero">
         <h1>Krystal Jean Austin</h1>
         <h2>Software Engineer</h2>
         <h3>Specializing in Web Design.</h3>
     </section>
 
-    <!--Beginning of the Porfolio tabs-->
+    <!--Porfolio Cards-->
     <section id="portfolio">
         <h2>Portfolio</h2>
-        
-            <ul id ="projectsContainer">
-                <li class="tile">
-                    <div id="projectOne" class="projects">  
-                        <img id="projectOnePic"  class="projectPics" src="images/Project 1 Chore Door .png"/>
-                    </div>
-                    <div>
-                        <a href="https://krystaljean.github.io/Chore-Door-Game/">Chore Door Game</a>
-                    </div>
-                </li>
 
-                <li class="tile">
-                    <div id="projectTwo" class="projects">
-                        <img id="projectTwoPic" class="projectPics" src="images/Snapchat-1896863642.jpg"/>
-                    </div>    
-                    <div>
-                        <a href="https://krystaljean.github.io/Colmar-Academy/">Colmar Academy</a>
-                    </div>
-                </li>
+        <div id="project-cards" class="container">
 
-                <li class="tile">
-                    <div id="projectThree" class="projects">
-                        <img id="projectThreePic"  class="projectPics" src="images/Project 1 Chore Door .png"/>
-                    </div>
-                    <div>
-                        <a href="https://krystaljean.github.io/Chore-Door-Game/">Project 3</a>
-                    </div>
-                </li>
+            <div id="one" class="tile">
+                <div class="inner-tile">
+                    <img id="projectOnePic"  class="projectPics" src="images/Chore Door (1).png"/> 
+                    <h3 class="project-title"><a href="https://krystaljean.github.io/Chore-Door-Game/">Chore Door Game</a></h3>
+                    <h4 class="project-description">Fun, simple to play game created with HTML,CSS, JS. 
+                        Make sure the door with the robot is the last door that you open.
+                    </h4>              
+                </div>
+            </div>
+    
+            <div id="two" class="tile">
+                <div class="inner-tile">
+                    <img id="projectTwoPic" class="projectPics" src="images/Chore Door .png"/>
+                    <h3 class="project-title"><a href="https://krystaljean.github.io/Chore-Door-Game/">Chore Door Game</a></h3>
+                    <h4 class="project-description">Fun, simple to play game created with HTML,CSS, JS. 
+                        Make sure the door with the robot is the last door that you open.
+                    </h4> 
+                </div>   
+            </div> 
 
-                <li id="projectFour" class="projects">
-                    <img id="projectFourPic"  class="projectPics" src="images/Project 1 Chore Door .png"/>
-                    <a href="https://krystaljean.github.io/Chore-Door-Game/">Project 4</a>
-                </li>
-                <li id="projectFive" class="projects">
-                    <img id="projectFivePic"  class="projectPics" src="images/Project 1 Chore Door .png"/>
-                    <a href="https://krystaljean.github.io/Chore-Door-Game/">Project 5</a>
-                </li>
+            <div id="three" class="tile"> 
+                <div class="inner-tile">
+                    <img id="projectThreePic"  class="projectPics" src="images/Colmar Academy (2).jpg"/>
+                    <h3 class="project-title"><a href="https://krystaljean.github.io/Chore-Door-Game/">Chore Door Game</a></h3>
+                    <h4 class="project-description">Fun, simple to play game created with HTML,CSS, JS. 
+                        Make sure the door with the robot is the last door that you open.
+                    </h4> 
+                </div>
+            </div>
+            
+            <div id="four" class="tile"> 
+                <div class="inner-tile">
+                    <img id="projectFourPic"  class="projectPics" src="images/Colmar Academy.jpg"/>
+                    <h3 class="project-title"><a href="https://krystaljean.github.io/Chore-Door-Game/">Chore Door Game</a></h3>
+                    <h4 class="project-description">Fun, simple to play game created with HTML,CSS, JS. 
+                        Make sure the door with the robot is the last door that you open.
+                    </h4> 
+                </div>
+            </div>
 
-                <li id="projectSix" class="projects">
-                    <img id="projectSixPic"  class="projectPics" src="images/Project 1 Chore Door .png"/>
-                    <a href="https://krystaljean.github.io/Chore-Door-Game/">Project 6</a>
-                </li>
-                <li id="projectSeven" class="projects">
-                    <img id="projectSevenPic"  class="projectPics" src="images/Project 1 Chore Door .png"/>
-                    <a href="https://krystaljean.github.io/Chore-Door-Game/">Project 7</a>
-                </li>
-                <li id="projectEight" class="projects">
-                    <img id="projectEightPic"  class="projectPics" src="images/Project 1 Chore Door .png"/>
-                    <a href="https://krystaljean.github.io/Chore-Door-Game/">Project 8</a>
-                </li>
-            </ul>
-        
+            <div id="five" class="tile"> 
+                <div class="inner-tile">
+                    <img id="projectFivePic"  class="projectPics" src="images/Pluto.png"/>
+                    <h3 class="project-title"><a href="https://krystaljean.github.io/Chore-Door-Game/">Chore Door Game</a></h3>
+                    <h4 class="project-description">Fun, simple to play game created with HTML,CSS, JS. 
+                        Make sure the door with the robot is the last door that you open.
+                    </h4> 
+                </div>
+            </div>
+
+            <div id="six" class="tile"> 
+                <div class="inner-tile">
+                    <img id="projectSixPic"  class="projectPics" src="images/ABC Coaching.png"/>
+                    <h3 class="project-title"><a href="https://krystaljean.github.io/Chore-Door-Game/">Chore Door Game</a></h3>
+                    <h4 class="project-description">Fun, simple to play game created with HTML,CSS, JS. 
+                        Make sure the door with the robot is the last door that you open.
+                    </h4> 
+                </div>
+            </div>
+
+            <div id="seven" class="tile"> 
+                <div class="inner-tile">
+                    <img id="projectSevenPic"  class="projectPics" src="images/Animal Classifications.png"/>
+                    <h3 class="project-title"><a href="https://krystaljean.github.io/Chore-Door-Game/">Chore Door Game</a></h3>
+                    <h4 class="project-description">Fun, simple to play game created with HTML,CSS, JS. 
+                        Make sure the door with the robot is the last door that you open.
+                    </h4> 
+                </div>
+            </div>
+
+            <div id="eight" class="tile"> 
+                <div class="inner-tile">
+                    <img id="projectEightPic"  class="projectPics" src="images/Survey Form.png"/>
+                    <h3 class="project-title"><a href="https://krystaljean.github.io/Chore-Door-Game/">Chore Door Game</a></h3>
+                    <h4 class="project-description">Fun, simple to play game created with HTML,CSS, JS. 
+                        Make sure the door with the robot is the last door that you open.
+                    </h4> 
+                </div>
+            </div>
+
+            <div id="nine" class="tile"> 
+                <div class="inner-tile">
+                    <img id="projectNinePic"  class="projectPics" src="images/Tic Tac Toe.png"/>
+                    <h3 class="project-title"><a href="https://krystaljean.github.io/Chore-Door-Game/">Chore Door Game</a></h3>
+                    <h4 class="project-description">Fun, simple to play game created with HTML,CSS, JS. 
+                        Make sure the door with the robot is the last door that you open.
+                    </h4> 
+                </div>
+            </div>
+
+        </div>
     </section>
+
+    <!--About Me-->
 
     <section id="about">
         <h2>About Me</h2>
@@ -111,19 +155,23 @@
                 <li>Javascript</li>
             </ul>
         </p>
-        
-        <h2 id="contact">Contact Me</h2>
-        <p>
-            If you would like me to create a website for you, reach out to me @ _______________. <!--add your email address here-->
-        </p>
     </section>
 </body>
-<footer id="favicons">
+
+    <!--Contact-->
+
+<footer id="contact">
+    <h2>Contact Me</h2>
+    <p>
+        If you would like me to create a website for you, reach out to me @ _______________. <!--add your email address here-->
+    </p>
+    <section class="favicons">
         <i class="fa fa-jedi fa-2x"></i>
         <i class="fa fa-facebook fa-2x"></i>
         <i class="fa fa-instagram fa-2x"></i>
         <i class="fa fa-github fa-2x"></i>
         <i class="fa fa-linkedin fa-2x"></i>
-        <i class="fa fa-gmail fa-2x"></i>  
+        <i class="fa fa-gmail fa-2x"></i>
+    </section>
 </footer>
 </html>
