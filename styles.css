@@ -1,0 +1,398 @@
+/* styles.css */
+
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a base font size and family */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Navigation Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 5px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.profile {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  font-family: cursive;
+  font-size: 24px;
+}
+
+.profile:hover img,
+.profile:hover #profile-name {
+  cursor: pointer;
+  color: #17b38c;
+}
+
+.profile img {
+  border-radius: 50%;
+  margin-right: 12px;
+  height: 40px;
+  border: solid black 1px;
+  box-shadow: 0px 0px 10px 1px;
+}
+
+#profile-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#profile-name, #profile-img {
+  text-decoration: none;
+  border-bottom: 0px;
+}
+
+.profile.active, 
+.profile img.active {
+  color: #17b38c;
+}
+
+
+.menu-options a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 5px;
+  padding: 4px;
+  padding-bottom: 2px;
+
+}
+
+.menu-options a:hover {
+  border-bottom: 2px solid #17b38c; /* Add some space between the text and the underline */
+  padding-bottom: 2px;
+  border-radius: 5px;
+}
+
+.menu-options a.active {
+  color: #17b38c;
+}
+
+/* Project Cards Styles */
+
+.projects {
+  background-color: rgb(23, 23, 23);
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  padding: 60px 5px 280px;
+  overflow: scroll;
+  display: flex;
+  justify-content: center;
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+}
+
+.project-card {
+  min-height: 200px;
+  height: min-content;
+  position: relative;
+  perspective: 1000px;
+  width: 300px;
+  margin: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  border-radius: 5px;
+}
+
+.project-front,
+.project-back {
+  outline: #fff solid 1px;
+  position: absolute;
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+  backface-visibility: hidden;
+  transition: transform 0.6s;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  /* aspect-ratio: 2/1; */
+}
+
+.project-front {
+  background-color: transparent;
+  justify-content: center;
+}
+
+.project-back {
+  background-color: #333;
+  color: #fff;
+  transform: rotateY(180deg);
+  padding: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.project-back h3 {
+  color: #17b38c;
+}
+
+.project-back a {
+  display: block;
+  margin: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.project-back a:hover {
+  text-decoration: underline;
+}
+
+.project-back a:active {
+  color: #17b38c;
+}
+
+.project-card:hover .project-front {
+  transform: rotateY(-180deg);
+}
+
+.project-card:hover .project-back {
+  transform: rotateY(0deg);
+}
+
+/* About Section Styles */
+
+.facts {
+  background-color: rgb(23, 23, 23);
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  padding: 60px 5px 280px;
+  overflow: scroll;
+  display: flex;
+  justify-content: center;
+}
+
+.fact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+}
+
+.fact-card {
+  min-height: 200px;
+  height: min-content;
+  position: relative;
+  perspective: 1000px;
+  width: 300px;
+  margin: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.fact-card img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  border-radius: 5px;
+}
+
+.fact-front,
+.fact-back {
+  outline: #fff solid 1px;
+  position: absolute;
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+  backface-visibility: hidden;
+  transition: transform 0.6s;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  aspect-ratio: 2/1;
+}
+
+.fact-front {
+  background-color: transparent;
+  justify-content: center;
+}
+
+.fact-back {
+  background-color: #333;
+  color: #fff;
+  transform: rotateY(180deg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fact-back a {
+  display: block;
+  margin-top: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.fact-back a:hover {
+  text-decoration: underline;
+}
+
+.fact-card:hover .fact-front {
+  transform: rotateY(-180deg);
+}
+
+.fact-card:hover .fact-back {
+  transform: rotateY(0deg);
+}
+
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  margin-bottom: -150px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 35px;
+}
+
+.footer-right {
+  text-align: right;
+  width: 50%;
+}
+
+.technologies img {
+  height: 30px;
+  width: auto;
+  margin: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+.contact-form {
+  padding-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  width: 100%;
+  height: 25px;
+  padding: 5px;
+  margin: 2px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* .contact-form input {
+  width: 45%;
+} */
+
+.flex-container {
+  display: flex;
+}
+
+.contact-form textarea {
+  height: 60px;
+}
+
+.contact-form button {
+  background-color: #17b38c;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  height: 40px;
+}
+
+/* Responsive Sizes */
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile {
+    padding-bottom: 10px;
+  }
+
+  .profile img {
+    position: absolute;
+    left: 20px;
+    top: 12px;
+    height: 60px;
+  }
+
+  .projects {
+    padding: 100px 5px 280px;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .technologies img {
+    height: 30px;
+    width: auto;
+    margin: 5px;
+  }
+
+  .footer-left {
+    padding: 5px 0;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .profile img {
+    position: absolute;
+    left: 16px;
+    top: 20px;
+    height: 52px;
+  }
+}
