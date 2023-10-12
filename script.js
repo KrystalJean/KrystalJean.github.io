@@ -3,9 +3,11 @@ document.addEventListener('DOMContentLoaded', function () {
   const projectCards = document.querySelectorAll('.project-card');
   const profileName = document.getElementById('profile-name');
   const profileImg = document.getElementById('profile-img');
+  const about = document.getElementById('about');
+  const projects = document.getElementById('projects');
   const footer = document.getElementById('footer');
   const technologies = document.querySelector('.technologies');
-  
+
   function handleProfileClick() {
     profileName.classList.add('active');
     profileImg.classList.add('active');
@@ -34,8 +36,10 @@ document.addEventListener('DOMContentLoaded', function () {
       // Remove 'active' class from all options
       menuOptions.forEach(option => {
         option.classList.remove('active');
-        technologies.classList.remove('hide');
         footer.style.marginBottom = '-150px';
+        technologies.classList.remove('hide');
+        about.classList.add('hide');
+        projects.classList.remove('hide');
       });
 
       // Add 'active' class to the clicked option
@@ -51,11 +55,24 @@ document.addEventListener('DOMContentLoaded', function () {
           card.style.display = 'none';
         }
       });
+
+
+
     });
   });
 
   // Handle profileName and profileImg clicks
   profileName.addEventListener('click', handleProfileClick);
+  profileName.addEventListener('click', ()=> {
+    about.classList.remove('hide');
+    projects.classList.add('hide');
+  });
 
   profileImg.addEventListener('click', handleProfileClick);
+  profileImg.addEventListener('click', ()=> {
+    about.classList.remove('hide');
+    projects.classList.add('hide');
+  });
+
 });
+

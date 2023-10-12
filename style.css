@@ -85,7 +85,7 @@ body {
 
 /* Project Cards Styles */
 
-.projects {
+.projects, .about {
   background-color: rgb(23, 23, 23);
   min-height: 100vh;
   height: auto;
@@ -96,15 +96,18 @@ body {
   justify-content: center;
 }
 
-.project-cards {
+.about {
+  padding-top: 100px;
+}
+
+.project-cards, .about-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  max-width: 1000px;
 }
 
-.project-card {
+.project-card, .about-card {
   min-height: 200px;
   height: min-content;
   position: relative;
@@ -115,7 +118,7 @@ body {
   border-radius: 5px;
 }
 
-.project-card img {
+.project-card img, .about-card img {
   width: 100%;
   height: auto;
   max-height: 200px;
@@ -123,7 +126,8 @@ body {
 }
 
 .project-front,
-.project-back {
+.project-back,
+.about-front {
   outline: #fff solid 1px;
   position: absolute;
   width: 100%;
