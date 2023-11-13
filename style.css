@@ -121,7 +121,7 @@ body {
 .project-card img, .about-card img {
   width: 100%;
   height: auto;
-  max-height: 200px;
+  max-height: 180px;
   border-radius: 5px;
 }
 
@@ -372,7 +372,7 @@ footer {
 
 /* Responsive Sizes */
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .navbar {
     display: flex;
     flex-direction: column;
@@ -409,7 +409,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media (max-width: 400px) {
   .profile img {
     position: absolute;
     left: 16px;
